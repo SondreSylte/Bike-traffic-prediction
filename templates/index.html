@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body> 
+        Predikere antall syklende
+        <br/>
+        <form action="{{url_for('predict')}}" method="post">
+            <input type="text" name="År" placeholder="År" required="required"> <br>
+            <input type="text" name="Måned" placeholder="Måned" required="required"> <br>
+            <input type="text" name="Dato" placeholder="Dato" required="required"> <br>
+            <input type="text" name="Ukedag" placeholder="Ukedag" required="required"> <br>
+            <input type="text" name="Klokkeslett" placeholder="Klokkeslett" required="required"> <br>
+            <input type="text" name="Lufttemperatur" placeholder="Lufttemperatur" required="required"> <br>
+            <input type="text" name="Lufttrykk" placeholder="Lufttrykk" required="required"> <br>
+            <input type="text" name="Globalstraling" placeholder="Globalstraling" required="required"> <br>
+            <input type="text" name="Solskinstid" placeholder="Solskinstid" required="required"> <br>
+            <br><br>
+
+            <button type="submit" value="Submit">Predict</button>
+            <button type="reset" value="Reset">Reset</button>
+        </form>
+        "{{prediction_text}}"
+    </body>
+</html>
+
+
+
